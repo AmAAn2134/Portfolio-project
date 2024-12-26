@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Amaan Qureshi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .skills, .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-box, .service-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .skill-box h3, .service-box h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .background-one {
+            margin-top: 50px;
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .background-one h2 {
+            color: #fff;
+        }
+
+        .background-two {
+            background: url('https://www.shutterstock.com/image-vector/abstract-dark-gradient-geometric-luxury-260nw-2068479694.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .background-three {
+            background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amaan Qureshi</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Amaan Qureshi, a Student at PWIOI Bangalore, pursuing a BS degree at IIT Madras.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate learner with a keen interest in technology. Currently, I am pursuing a BS degree at IIT Madras. My goal is to leverage my skills and knowledge to make a significant impact in the tech world.</p>
+        <p>Find me on:
+            <a href="https://www.linkedin.com/in/amaan-qureshi-843067326/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/AmAAn2134" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">
+                <h3>HTML</h3>
+                <p>90%</p>
+            </div>
+            <div class="skill-box">
+                <h3>CSS</h3>
+                <p>80%</p>
+            </div>
+            <div class="skill-box">
+                <h3>JavaScript</h3>
+                <p>70%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites.</p>
+            </div>
+            <div class="service-box">
+                <h3>Graphic Design</h3>
+                <p>Creating visually appealing designs and assets.</p>
+            </div>
+            <div class="service-box">
+                <h3>Digital Marketing</h3>
+                <p>Improving online presence and reach.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="background-one">
+        <h2>Stylish Portfolio Background</h2>
+        <p>This section demonstrates a clean and visually appealing background for your portfolio website.</p>
+    </div>
+
+    <div class="background-two">
+        <h2>Dark Luxury Background</h2>
+        <p>This section features a dark and elegant background for a professional touch.</p>
+    </div>
+
+    <div class="background-three">
+        <h2>Abstract Technology Background</h2>
+        <p>Highlighting the beauty of abstract digital visuals for modern portfolios.</p>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
